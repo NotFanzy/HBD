@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🎂 HBD untuk Moon – Fireworks Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Fireworks -->
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <!-- Balon -->
+  <div class="balloons" aria-hidden="true" id="balloons"></div>
+
+  <div class="wrap">
+    <div class="card" id="card" role="article" aria-labelledby="title">
+      <div class="ribbon" aria-hidden="true"><span>🎉 HAPPY BIRTHDAY • SELAMAT ULANG TAHUN • SAENGIL CHUKA • FURTHER ORBIT, BIGGER DREAMS • </span></div>
+
+      <div class="hero">
+        <div class="moon" aria-hidden="true"></div>
+        <div>
+          <h1 class="title" id="title">Selamat Ulang Tahun, <span id="nama">Kak Mundi</span><span class="tag">Moon / Bulan</span></h1>
+          <div class="sub" style="opacity:.85">HBD KAKAKU MAAF YA CUMA BEGINI &lt;3</div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div id="opening"></div>
+        <div class="divider"></div>
+        <div id="bullets"></div>
+        <div class="divider"></div>
+        <div id="punch"></div>
+        <p class="bullet"><strong>Penutup:</strong> Tetap jadi cahaya di malam siapa pun, dengan cara yang cuma kamu punya. HBD! 🎂🌕</p>
+      </div>
+
+      <div class="footer">
+        <button type="button" onclick="boomMany()">🎆 Ledakkan Petasan</button>
+        <button type="button" onclick="reroll()">🔀 Acak Ulang Ucapan</button>
+        <button type="button" class="dim" onclick="editNama()">✏️ Edit Nama</button>
+        <button type="button" class="dim" onclick="copyText()">📋 Salin Teks</button>
+      </div>
+      <div class="tiny">dibuat oleh irfan + sad mode</div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Tersalin ke clipboard!</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
